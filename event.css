@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000;
+}
+
+.eventintro {
+    height: 90vh;
+    background-color: #000;
+    display: flex;
+}
+
+.event-img {
+    height: inherit;
+    min-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.event-img img {
+    height: 490px;
+    border-radius: 10px;
+    /* filter: drop-shadow(10px 10px 10px #fff); */
+    box-shadow: 0px 0px 73px -14px #f2ff00;
+}
+
+.di {
+    color: #fff;
+    display: flex;
+    align-items: end;
+}
+
+.di p {
+    transform: rotate(90deg);
+    font-size: xx-large;
+    margin-bottom: 10vh;
+}
+
+.event-det {
+    /* min-width: 50%; */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.event-det h1 {
+    font-size: 4.5rem;
+    margin: 70px 0 20px 0;
+}
+
+.event-det p {
+    font-size: 1.2rem;
+    width: 50%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.reg {
+    width: 200px;
+    height: 40px;
+    background-color: green;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: #fff solid 2px;
+    margin-top: 20px;
+}
+
+/* .regcontain {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#000000d4, #ffffff00, #000000d4), url(/img/download\ \(6\).jpeg);
+    background-size: cover;
+} */
+
+/* form {
+    width: 500px;
+    height: 400px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255 255 255 / 20%);
+    box-shadow: 3px 3px 20px 0px rgba(255, 255, 255, 0.89);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border-radius: 10px;
+}
+
+form input {
+    width: 200px;
+} */
+
+section {
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+    background-image: linear-gradient(#000000d4, #ffffff00, #000000d4), url(/img/eventbg1.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-value {
+    width: 400px;
+    height: 500px;
+    background: #ffffff33;
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.in {
+    display: flex;
+    gap: 25px;
+}
+
+form h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+.input {
+    margin: 20px 0 10px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+
+}
+
+
+.input input {
+    width: 100%;
+    height: 25px;
+    background: #ffffff26;
+    box-shadow: 0px 0px 20px 4px #0000005f;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    margin-bottom: 5px;
+    margin-top: 2px;
+    padding-left: 5px;
+    color: #fff;
+    border-radius: 2px;
+}
+
+.ph {
+    width: 110px;
+}
+
+.usn {
+    width: 173px;
+}
+
+.submit {
+    width: 100px;
+    height: 30px;
+    border-radius: 6px;
+    background: green;
+    border: #fff;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.submit:active,
+.submit:focus {
+    transform: scale(0.9);
+}
+
+.footer {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.final {
+    height: 38vh;
+}
+
+
+@media all and (max-width: 1045px) {
+    .event-img img {
+        height: 350px;
+    }
+
+    .event-det h1 {
+        font-size: 3rem;
+    }
+
+}
+
+@media all and (max-width: 650px) {
+
+    .event-img img {
+        height: 250px;
+    }
+
+    .event-det {
+        margin-bottom: 20px;
+        align-items: center;
+
+    }
+
+    .event-det h1 {
+        margin: 10px 0 20px 0;
+    }
+
+    .di {
+        display: none;
+    }
+
+    .eventintro {
+        flex-direction: column;
+    }
+}

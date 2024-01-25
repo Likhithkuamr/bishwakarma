@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/event.css" />
+    <script
+      src="https://kit.fontawesome.com/b7514a30f9.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <img src="/img/logo.png" alt="j1" />
+      <div class="menu">
+        <a href="/index.html"><li>HOME</li></a>
+        <a href="/index.html#event"><li>EVENTS</li></a>
+        <a href="#foot"><li>CONTACTS</li></a>
+      </div>
+    </header>
+
+    <!-- introduction -->
+    <div class="eventintro">
+      <div class="event-img">
+        <img src="/img/download (1).jpeg" alt="" />
+      </div>
+      <div class="di"><p>>></p></div>
+      <div class="event-det">
+        <h1>
+          Registration for <br />
+          Robo-Race
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+          recusandae <br />
+          <br />
+          Team size : 2-3
+        </p>
+        <a href="#reg"><div class="reg">Register Now</div></a>
+      </div>
+    </div>
+
+    <!-- Registration from -->
+    <section id="reg">
+      <div class="form-box">
+        <div class="form-value">
+          <form name="submit-to-google-sheet">
+            <h2>Register</h2>
+            <div class="input p1">
+              <label>Particpant 1</label>
+              <input type="text" name="particpant1" id="" required />
+            </div>
+
+            <div class="input p2">
+              <label for="">Particpant 2</label>
+              <input type="text" name="particpant2" id="" />
+            </div>
+
+            <div class="input p3">
+              <label for="">Particpant 3</label>
+              <input type="text" name="particpant3" id="" />
+            </div>
+
+            <div class="in">
+              <div class="input ph">
+                <label for="">Phone Number</label>
+                <input type="text" name="phone" id="" required />
+              </div>
+
+              <div class="input usn">
+                <label for="">USN Numaber</label>
+                <input type="text" name="usn" id="" required />
+              </div>
+            </div>
+
+            <div class="input cn">
+              <label for="">College Name</label>
+              <input type="text" name="college-name" id="" required />
+            </div>
+
+            <center>
+              <input type="submit" value="subimt" class="submit" />
+            </center>
+
+            <span id="success"></span>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <div class="final" id="foot">
+      <div class="footer">
+        <div class="footcontent">
+          <div class="left">
+            <div class="he">
+              <img src="/img/logo.png" alt="j1" />
+              <p>BISWAKARMA - BIT</p>
+            </div>
+            <div class="hee">
+              <i class="fa-brands fa-square-instagram"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+          <div class="divid"></div>
+          <div class="right">
+            <h1>CONTACT</h1>
+            <h3>anything@gamil.com</h3>
+            <h3>BTI - Bangalore</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxDgCmnJiz3IcAdlwj0QU5ns6-95kiSMIootFH_jw6tT_gsrjcc6IwhMKrOjjPuLw0o/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const success = document.getElementById("success");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            success.innerHTML = "data successfully submit";
+
+            setTimeout(function () {
+              success.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
