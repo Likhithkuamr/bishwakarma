@@ -8,13 +8,14 @@ html {
 }
 
 body {
-    background-color: #000;
+    background-color: #000000;
 }
 
 .eventintro {
     height: 90vh;
     background-color: #000;
     display: flex;
+
 }
 
 .event-img {
@@ -37,18 +38,21 @@ body {
     color: #fff;
     display: flex;
     align-items: end;
+
 }
 
 .di p {
     transform: rotate(90deg);
     font-size: xx-large;
     margin-bottom: 10vh;
+
 }
 
 .event-det {
     /* min-width: 50%; */
     color: #fff;
     display: flex;
+
     flex-direction: column;
 }
 
@@ -238,10 +242,40 @@ form h2 {
 
 @media all and (max-width: 420px) {
     .event-det {
-        margin-bottom: 140px;
+        margin-bottom: 92px;
     }
 
     .final {
-        height: 18vh;
+        height: 20vh;
+    }
+
+    .form-value {
+        width: 334px;
+    }
+
+    .input input {
+        width: 263px;
+    }
+
+    .input {
+        width: 268px;
+    }
+
+    .usn input,
+    .usn {
+        width: 148px;
+    }
+
+    .ph input,
+    .ph {
+        width: 108px;
+    }
+
+    .event-det h1 {
+        font-size: 35px;
+    }
+
+    .event-det p {
+        font-size: 15px;
     }
 }

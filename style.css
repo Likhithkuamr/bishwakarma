@@ -359,7 +359,7 @@ li span {
 
 @media all and (max-width: 420px) {
     .footcontent img {
-        height: 89px;
+        height: 75px;
     }
 
     .footcontent p {
@@ -412,4 +412,13 @@ li span {
     .body {
         min-height: 82vh;
     }
+
+    .bis {
+        margin: 3vh 6vh 47px 6vh;
+    }
+
+    .logo img {
+        width: 255px;
+    }
+
 }
