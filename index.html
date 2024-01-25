@@ -15,9 +15,20 @@
     <header>
       <img src="/img/logo.png" alt="j1" />
       <div class="menu">
-        <li>HOME</li>
-        <li>EVENTS</li>
-        <li>CONTACTS</li>
+        <ul>
+          <a href="/index.html"><li>HOME</li></a>
+        <a href="/index.html#event"><li>EVENTS</li></a>
+        <a href="#foot"><li>CONTACTS</li></a>
+        </ul>
+      </div>
+
+      <i class="fa-solid fa-bars"></i>
+      <div class="dmenu">
+        <ul>
+          <a href="/index.html"><li>HOME</li></a>
+        <a href="/index.html#event"><li>EVENTS</li></a>
+        <a href="#foot"><li>CONTACTS</li></a>
+        </ul>
       </div>
     </header>
 
@@ -81,7 +92,7 @@
     </div>
 
     <!-- CONTACTS and FOOTER -->
-    <div class="final">
+    <div class="final" id="foot">
       <div class="contact">
         <div class="center"><h1>organizers</h1></div>
         <div class="contact-list">
@@ -113,6 +124,7 @@
       </div>
     </div>
 
+    <script src="/toggle.js"></script>
     <script src="/timer.js"></script>
   </body>
 </html>

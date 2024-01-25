@@ -4,6 +4,15 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 body {
     background-color: #000;
 }
@@ -234,7 +243,7 @@ li span {
 }
 
 .divid {
-    height: 80%;
+    height: 130px;
     width: 2px;
     background-color: #000000;
     border-radius: 10px;
@@ -251,6 +260,31 @@ li span {
 
 .right h3 {
     font-weight: lighter;
+}
+
+.fa-bars {
+    display: none;
+
+}
+
+.dmenu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 8px;
+    width: 150px;
+    height: 0px;
+    color: #ffffff;
+    background: #b1b1b14f;
+    z-index: 10;
+    overflow: hidden;
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dmenu.open {
+    height: 150px;
 }
 
 @media all and (max-width: 1212px) {
@@ -293,7 +327,7 @@ li span {
 
 @media all and (max-width: 580px) {
     .bis h1 {
-        font-size: 70px;
+        font-size: 50px;
     }
 
     .bis p {
@@ -304,4 +338,78 @@ li span {
         font-size: 10px;
     }
 
+
+    .menu {
+        display: none;
+    }
+
+    .fa-bars {
+        float: right;
+        color: #ffffff;
+        display: block;
+        margin: 10px;
+        font-size: 1.5rem;
+    }
+
+    .dmenu {
+        display: flex;
+    }
+}
+
+
+@media all and (max-width: 420px) {
+    .footcontent img {
+        height: 89px;
+    }
+
+    .footcontent p {
+        font-size: 13px;
+        margin-left: 0px;
+    }
+
+    .left {
+        flex-direction: column;
+        width: 55%;
+        margin-left: 10px;
+    }
+
+    he img {
+        width: 100px;
+    }
+
+    .hee {
+        gap: 10px;
+        font-size: 18px;
+        height: 30px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    .divid {
+        width: 1px;
+        height: 130px;
+    }
+
+    .cont-card img {
+        height: 115px;
+        width: 175px;
+    }
+
+    .eve img {
+        height: 262px;
+        width: 211px;
+    }
+
+    .event-intro h1 {
+        margin: 3vh 0 0 0vh;
+        font-size: 40px;
+    }
+
+    .event-intro p {
+        font-size: 16px;
+    }
+
+    .body {
+        min-height: 82vh;
+    }
 }

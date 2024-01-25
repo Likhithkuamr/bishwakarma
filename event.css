@@ -235,3 +235,13 @@ form h2 {
         flex-direction: column;
     }
 }
+
+@media all and (max-width: 420px) {
+    .event-det {
+        margin-bottom: 140px;
+    }
+
+    .final {
+        height: 58vh;
+    }
+}
