@@ -116,7 +116,7 @@ section {
     height: 100vh;
     width: 100%;
     color: #fff;
-    background-image: linear-gradient(#000000d4, #ffffff00, #000000d4), url(/img/eventbg1.png);
+    background-image: linear-gradient(#000000eb, #ffffff00, #000000d4), url(/img/eventbg1.png);
     background-position: center;
     background-size: cover;
     display: flex;

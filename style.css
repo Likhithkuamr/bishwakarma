@@ -94,6 +94,27 @@ li {
     text-align: center;
 }
 
+.navlist {
+    position: relative;
+
+}
+
+.navlist:before {
+    content: "";
+    position: absolute;
+    bottom: 13px;
+    left: 31px;
+    height: 6px;
+    width: 0%;
+    background-color: #d46060;
+    border-radius: 50px;
+    transition: width .3s ease-in-out;
+}
+
+.navlist:hover:before {
+    width: 50%;
+}
+
 li {
     display: inline-block;
     font-size: 1.5em;
@@ -163,8 +184,12 @@ li span {
 .eve img {
     height: 300px;
     width: 250px;
-    /* border: #d46060 solid 2px;    */
     margin: 28px 40px 0px 44px;
+    transition: 0.5s ease-in-out scale;
+}
+
+.eve img:hover {
+    scale: 1.1;
 }
 
 .final {
