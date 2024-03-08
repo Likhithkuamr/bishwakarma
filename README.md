@@ -1,4 +1,4 @@
-# Bishwakarmay
+# Bishwakarma
 
 # link to the WEBSITE 👇
 
